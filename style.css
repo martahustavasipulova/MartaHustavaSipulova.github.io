@@ -7,11 +7,11 @@
 
 html, body {
   height: 100%;
-  font-family: "Fira Code", monospace;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: #0a0a0f; /* nearly black */
+  background-color: #fff; /* nearly black */
   color: #dcdcff; /* soft bluish text */
   scroll-behavior: smooth;
 }
@@ -30,6 +30,7 @@ body {
 
 /* Header - dark glassy */
 header {
+  font-family: "Alice", serif;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -49,7 +50,7 @@ nav {
 nav h1 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #a78bfa; /* soft purple accent */
+  color: #8bc1ff;
 }
 
 nav ul {
@@ -59,7 +60,7 @@ nav ul {
 }
 
 nav a {
-  color: #997eeb;
+  color: #8bc1ff;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -67,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #b8a2fa;
+  color: #549ef2;
 }
 
 /* Hero Section */
@@ -77,7 +78,7 @@ nav a:hover {
   background: #242444;
   background-size: 400% 400%;
   /* animation: gradientShift 12s ease infinite; */
-  color: #dcdcff;
+  color: #2C5A8F;
 }
 
 @keyframes gradientShift {
@@ -92,6 +93,7 @@ nav a:hover {
 } 
 
 .hero h1 {
+  font-family: "Alice", serif;
   font-size: 5rem;
   margin: 1rem 0;
   line-height: 1.2;
@@ -99,14 +101,14 @@ nav a:hover {
 }
 
 .hero .highlight {
-  color: #a78bfa; /* purple highlight */
+  color: #2C5A8F;
 }
 
 .btn {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.9rem 1.8rem;
-  background: linear-gradient(135deg, #6366f1, #a78bfa);
+  background: linear-gradient(135deg, #2C5A8F, #79afec);
   color: #0a0a0f;
   text-decoration: none;
   border-radius: 8px;
@@ -133,8 +135,11 @@ section#projects,
 section#teaching,
 section#other_projects,
 section#supervisor_and_opponent,
+section#publications,
 section#skills,
+section#it_skills,
 section#languages,
+section#hobbies,
 section#references,
 section#contact {
   max-width: 70rem;
@@ -142,9 +147,10 @@ section#contact {
 }
 
 section h2 {
+  font-family: "Alice", serif;
   margin-bottom: 1rem;
   font-size: 2.25rem;
-  color: #a78bfa; /* purple headers */
+  color: #8bc1ff;
 }
 
 section p {
@@ -176,7 +182,7 @@ section p {
 }
 
 .skill-name {
-  color: #f3f4f6;
+  color: #2C5A8F;
 }
 
 .level {
@@ -185,16 +191,16 @@ section p {
 }
 
 .level.beginner {
-  background: #3b0a0a;
-  color: #f87171;
+  /* background: #3b0a0a; */
+  color: #2C5A8F;
 }
 .level.intermediate {
-  background: #3b2f0a;
-  color: #f0ad4e;
+  /* background: #3b2f0a; */
+  color: #2C5A8F;
 }
 .level.advanced {
-  background: #0a3b1a;
-  color: #4ade80;
+  /* background: #0a3b1a; */
+  color: #2C5A8F;
 }
 
 /* Level bar (visual dashes/progress) */ 
@@ -216,17 +222,17 @@ section p {
 /* Beginner - 33% */
 .level-bar.beginner::before { 
   width: 33%;
-  background: #d9534f;
+  background: #2C5A8F;
 }
 /* Intermediate - 66% */
 .level-bar.intermediate::before { 
   width: 66%;
-  background: #f0ad4e;
+  background: #2C5A8F;
 }
 /* Advanced - 100% */
 .level-bar.advanced::before { 
   width: 100%;
-  background: #28a745;
+  background: #2C5A8F;
 }
 
 .skills-list {
@@ -249,7 +255,7 @@ section#languages .skills-list {
 }
 
 .project h3 {
-  color: #dcdcff;
+  color: #2C5A8F;
 }
 
 .project-details {
@@ -257,11 +263,11 @@ section#languages .skills-list {
 }
 
 .project a {
-  color: #997eeb;
+  color: #2C5A8F;
 }
 
 .project a:hover {
-  color: #b8a2fa;
+  color: #549ef2;
 }
 
 /* Contact Section */
@@ -274,11 +280,11 @@ section#languages .skills-list {
 }
 
 .contact-info a {
-  color: #997eeb;
+  color: #8bc1ff;
 }
 
 .contact-info a:hover {
-  color: #b8a2fa;
+  color: #549ef2;
 }
 
 /* Footer */
@@ -286,7 +292,7 @@ footer {
   padding: 2rem 1rem;
   margin-top: 15rem;
   background: #0a0a0f;
-  color: #a78bfa;
+  color: #8bc1ff;
   font-size: 0.7rem;
   display: flex;
   justify-content: end;
@@ -325,23 +331,28 @@ footer {
 
 
 /* Theme Variants */
-.theme-pink, .theme-pink body {
-  background-color: #ffbbf8;
-  color: #5c6061;
+.theme-blue, .theme-blue body {
+  background-color: #2C5A8F;
+  color: #fff;
 
   header, footer {
-    background: #ffbbf8;
+    background: #2C5A8F;
   }
 
   .hero, .project, .skill {
-    background: #82367a;
+    background: #fff;
 
     .btn {
-      background: linear-gradient(135deg, #ffbbf8, #a3619d);
+      background: #2C5A8F;
+      color: #fff;
     }
   }
 
-  .project, .skill {
+  .project {
+    color: #2C5A8F;
+  }
+
+  .skill {
     color: #f3f4f6;
   }
 }
