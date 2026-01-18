@@ -445,8 +445,12 @@ footer {
     flex-direction: column;
   }
 
-  .card-with-image.horizontal {
+  .card-with-image.horizontal .flex-content {
     flex-direction: column;
+  }
+
+  .card-with-image.horizontal .flex-content.mobile-reverse {
+    flex-direction: column-reverse;
   }
 }
 
