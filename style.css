@@ -286,7 +286,12 @@ section#languages .skills-list {
   margin-bottom: 1rem;
   background: #242444;
   border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.4); */
+}
+
+.project:hover {
+  transform: translateY(-4px);
 }
 
 .project h3 {
@@ -349,6 +354,11 @@ section#languages .skills-list {
   color: #064375;
   padding: 3rem;
   border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-row .card-with-image:hover {
+  transform: translateY(-4px);
 }
 
 .card-text {
